@@ -8,9 +8,11 @@
 	import Invested from './Invested.svelte';
 </script>
 
-<div class="flex flex-grow flex-col space-y-6 p-6 pt-[max(1.5rem,_env(safe-area-inset-top))]">
+<div
+	class="flex flex-grow flex-col space-y-6 overflow-auto px-6 pt-[max(1.5rem,_env(safe-area-inset-top))]"
+>
 	<H1>Overall</H1>
-	<div class="flex flex-grow flex-col">
+	<div class="-mx-6 flex flex-grow flex-col overflow-auto px-6 pb-6">
 		<div class="grid grid-cols-2 gap-3">
 			<Portfolio />
 			<MonthlyIncome />

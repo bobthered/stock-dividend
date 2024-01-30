@@ -4,10 +4,10 @@
 </script>
 
 <div
-	class="flex max-h-full flex-grow flex-col space-y-6 p-6 pt-[max(1.5rem,_env(safe-area-inset-top))]"
+	class="flex max-h-full flex-grow flex-col space-y-6 overflow-auto px-6 pt-[max(1.5rem,_env(safe-area-inset-top))]"
 >
 	<H1>Settings</H1>
-	<div class="flex flex-grow flex-col space-y-3">
+	<div class="-mx-6 flex flex-grow flex-col space-y-3 overflow-auto px-6 pb-6">
 		<Fieldset legend="Strike Price">
 			<Input bind:value={$settings.strikePrice} pattern="\d*" type="number" />
 		</Fieldset>

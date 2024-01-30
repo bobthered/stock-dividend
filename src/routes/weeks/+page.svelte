@@ -5,10 +5,10 @@
 </script>
 
 <div
-	class="flex flex-grow flex-col space-y-6 overflow-auto p-6 pt-[max(1.5rem,_env(safe-area-inset-top))]"
+	class="flex flex-grow flex-col space-y-6 overflow-auto px-6 pt-[max(1.5rem,_env(safe-area-inset-top))]"
 >
 	<H1>Weeks</H1>
-	<div class="relative overflow-auto">
+	<div class="relative -mx-6 overflow-auto px-6 pb-6">
 		<Table>
 			<Thead>
 				<Th class="text-right">Week</Th>
