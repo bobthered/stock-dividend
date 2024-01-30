@@ -11,30 +11,38 @@
 	<div class="relative overflow-auto">
 		<Table>
 			<Thead>
-				<Th>Week</Th>
-				<Th>Year</Th>
-				<Th>Age</Th>
-				<Th>Date</Th>
-				<Th>Reinvestment</Th>
-				<Th>Total Invested</Th>
-				<Th>Portfolio</Th>
-				<Th>Shares</Th>
-				<Th>Dividend Payout</Th>
-				<Th>Profit</Th>
+				<Th class="text-right">Week</Th>
+				<Th class="text-right">Year</Th>
+				<Th class="text-right">Age</Th>
+				<Th class="text-right">Date</Th>
+				<Th class="text-right">Reinvestment</Th>
+				<Th class="text-right">Total Invested</Th>
+				<Th class="text-right">Portfolio</Th>
+				<Th class="text-right">Shares</Th>
+				<Th class="text-right">Dividend Payout</Th>
+				<Th class="text-right">Profit</Th>
 			</Thead>
 			<Tbody>
 				{#each $weeks as week}
 					<Tr>
-						<Td>{week.week}</Td>
-						<Td>{week.year}</Td>
-						<Td>{format.integer(Math.floor(week.age))}</Td>
-						<Td>{week.date.toFormat('M/d/yy')}</Td>
-						<Td>{format.currency(week.reinvestment, { maximumFractionDigits: 0 })}</Td>
-						<Td>{format.currency(week.totalInvested, { maximumFractionDigits: 0 })}</Td>
-						<Td>{format.currency(week.portfolio, { maximumFractionDigits: 0 })}</Td>
-						<Td>{format.integer(week.shares, { maximumFractionDigits: 0 })}</Td>
-						<Td>{format.currency(week.dividendPayout, { maximumFractionDigits: 0 })}</Td>
-						<Td>{format.currency(week.profit, { maximumFractionDigits: 0 })}</Td>
+						<Td class="text-right">{week.week}</Td>
+						<Td class="text-right">{week.year}</Td>
+						<Td class="text-right">{format.integer(Math.floor(week.age))}</Td>
+						<Td class="text-right">{week.date.toFormat('M/d/yy')}</Td>
+						<Td class="text-right"
+							>{format.currency(week.reinvestment, { maximumFractionDigits: 0 })}</Td
+						>
+						<Td class="text-right"
+							>{format.currency(week.totalInvested, { maximumFractionDigits: 0 })}</Td
+						>
+						<Td class="text-right"
+							>{format.currency(week.portfolio, { maximumFractionDigits: 0 })}</Td
+						>
+						<Td class="text-right">{format.integer(week.shares, { maximumFractionDigits: 0 })}</Td>
+						<Td class="text-right"
+							>{format.currency(week.dividendPayout, { maximumFractionDigits: 0 })}</Td
+						>
+						<Td class="text-right">{format.currency(week.profit, { maximumFractionDigits: 0 })}</Td>
 					</Tr>
 				{/each}
 			</Tbody>
