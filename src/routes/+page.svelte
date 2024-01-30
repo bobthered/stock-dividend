@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import { H1 } from '$components';
+</script>
+
+<div class="flex flex-grow flex-col space-y-6 p-6 pt-[max(1.5rem,_env(safe-area-inset-top))]">
+	<H1>Overall</H1>
+</div>
