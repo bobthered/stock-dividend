@@ -17,7 +17,7 @@
 		$page.url.pathname === href
 			? undefined
 			: 'bg-transparent text-current hover:bg-transparent focus:bg-transparent focus:ring-neutral-900/30 dark:focus:ring-neutral-100',
-		'flex-grow rounded-none pb-[calc(.75rem_+_env(safe-area-inset-bottom))]'
+		'flex-grow rounded-none pb-[max(.75rem,_env(safe-area-inset-bottom))]'
 	)}
 	{href}
 >
