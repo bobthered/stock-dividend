@@ -27,7 +27,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 </Pwa>
 <Title base="Stock Dividend" />
-<div class="flex max-h-[100dvh] min-h-[100dvh] flex-col">
+<div class="pwa:max-h-[100vh] pwa:min-h-[100vh] flex max-h-[100dvh] min-h-[100dvh] flex-col">
 	<div class="relative flex flex-grow flex-col overflow-y-auto">
 		<slot />
 	</div>
