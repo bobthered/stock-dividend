@@ -1,12 +1,13 @@
 <script>
 	import { Header, Nav, NavButton, Pwa, Title } from '$components';
-	import { Bars2, Cog6Tooth } from '$icons';
+	import { Bars4, Cog6Tooth, Squares2x2 } from '$icons';
 	import { theme } from '$stores';
 	import '../app.pcss';
 
 	// props (internal)
 	const navItems = [
-		{ href: '/', src: Bars2, title: 'Overall' },
+		{ href: '/', src: Squares2x2, title: 'Overall' },
+		{ href: '/weeks', src: Bars4, title: 'Weeks' },
 		{ href: '/settings', src: Cog6Tooth, title: 'Settings' }
 	];
 </script>

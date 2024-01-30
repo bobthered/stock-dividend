@@ -8,6 +8,9 @@
 >
 	<H1>Settings</H1>
 	<div class="flex flex-grow flex-col space-y-3">
+		<Fieldset legend="Strike Price">
+			<Input bind:value={$settings.strikePrice} pattern="\d*" type="number" />
+		</Fieldset>
 		<Fieldset legend="Initial Investment">
 			<Input bind:value={$settings.initialInvestment} pattern="\d*" type="number" />
 		</Fieldset>
@@ -16,6 +19,9 @@
 		</Fieldset>
 		<Fieldset legend="Weekly Reinvestment">
 			<Input bind:value={$settings.weeklyReinvestment} pattern="\d*" type="number" />
+		</Fieldset>
+		<Fieldset legend="Annual Increase %">
+			<Input bind:value={$settings.annualIncreasePercent} pattern="\d*" type="number" />
 		</Fieldset>
 		<Fieldset legend="Start Date">
 			<Input bind:value={$settings.startDate} type="date" />
