@@ -40,7 +40,9 @@
 						>
 						<Td class="text-right">{format.integer(week.shares, { maximumFractionDigits: 0 })}</Td>
 						<Td class="text-right"
-							>{format.currency(week.dividendPayout, { maximumFractionDigits: 0 })}</Td
+							>{format.currency(week.isLastWeekOfMonth ? week.dividendPayout : 0, {
+								maximumFractionDigits: 0
+							})}</Td
 						>
 						<Td class="text-right">{format.currency(week.profit, { maximumFractionDigits: 0 })}</Td>
 					</Tr>
